@@ -9,20 +9,20 @@
 <body>
 
 <!-- header -->
-  <div class="site-header">
+    <header class="site-header">
     <div class="header-inner">
       <a href="index.html" class="logo">Brew & Gather</a>
 
-      <nav>
+      <nav aria-label="Main Navigation">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html" aria-current="page">Home</a></li>
           <li><a href="menu.html">Menu</a></li>
           <li><a href="about.html">Our Story</a></li>
           <li><a href="contact.html">Visit Us</a></li>
         </ul>
       </nav>
 
-      <button class="menu-toggle">
+      <button class="menu-toggle" aria-label="Open menu">
         <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
           <line x1="3" y1="6" x2="21" y2="6"/>
           <line x1="3" y1="12" x2="21" y2="12"/>
@@ -30,11 +30,11 @@
         </svg>
       </button>
     </div>
-  </div>
+  </header>
 
 
 <!-- main -->
-  <div>
+  <main>
 
     <div class="hero">
       <div class="hero-content">
@@ -43,28 +43,28 @@
         <a href="/menu.html" class="btn">See our menu</a>
       </div>
       
-      <img src="images/hero.jpg" class="hero-image">
+      <img src="images/hero.png" class="hero-image" alt="Cup of freshly brewed coffee on a table">
     </div>
 
     <div class="section">
       <div class="container">
-        <h4>What we offer</h4>
+        <h2>What we offer</h2>
         <div class="cards">
 
           <div class="card">
-            <h4>Specialty Coffee</h4>
+            <h3>Specialty Coffee</h3>
             <p>Single-origin beans sourced from small farms, roasted in small batches to bring out the best of every cup.</p>    
             <a href="/menu.html">Read more</a>
           </div>
 
           <div class="card">
-            <h4>Fresh Pastries</h4>
+            <h3>Fresh Pastries</h3>
             <p>Baked in-house every morning. Croissants, scones, and seasonal specials made with local ingredients.</p>
             <a href="/menu.html">Read more</a>
           </div>
 
           <div class="card">
-            <h4>Private Events</h4>
+            <h3>Private Events</h3>
             <p>Host your next workshop, meeting, or celebration in our private space. Capacity for up to 30 guests.</p>
             <a href="/contact.html">Read more</a>
           </div>
@@ -76,9 +76,9 @@
     <div class="section section--warm">
       <div class="container two-col">
 
-        <img src="images/interior.jpg" class="interior-photo">
+        <img src="images/interior.png" class="interior-photo" alt="Interior seating area of Brew and Gather Coffee Co">
         <div class="story-text">
-          <h4>Our story</h4>
+          <h2>Our story</h2>
           <p>Brew &amp; Gather started in 2019 as a small pop-up in the Glebe neighbourhood of Ottawa. We wanted to create a space that felt less like a transaction and more like a ritual — a reason to pause, connect, and be present.</p>
           <p>Today we're at the corner of Bank and Clemow, open seven days a week. Come find your corner.</p>
           <a href="/about.html">Read more</a>
@@ -90,17 +90,19 @@
       <div class="container">
         <div class="contact-grid">
           <div>
-            <h4>Find us</h4>
+            <h2>Find us</h2>
             <p>123 Bank Street<br>Ottawa, ON  K1S 3W7</p>
             <p>Monday – Friday: 7am – 6pm<br>Saturday – Sunday: 8am – 5pm</p>
             <p><a href="tel:6135550182">613-555-0182</a></p>
           </div>
           <div>
-            <h4>Send us a message</h4>
+            <h2>Send us a message</h2>
             
             <form class="contact-form">
-              <input type="text" placeholder="Your name">
-              <input type="email" placeholder="Your email">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Your name">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" placeholder="Your email">
               <textarea placeholder="Your message" rows="4"></textarea>
               <div class="btn-submit">Send message</div>
             </form>
@@ -109,7 +111,7 @@
       </div>
     </div>
 
-  </div>
+  </main>
 
 
 
